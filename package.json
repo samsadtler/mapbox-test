@@ -1,0 +1,29 @@
+{
+  "name": "mapbox-test",
+  "version": "1.0.0",
+  "description": "a simple app to get up and running with mapbox and angular1",
+  "main": "./index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Sam Sadtler",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-animate": "^1.5.0",
+    "angular-aria": "^1.5.0",
+    "angular-material": "^1.1.1",
+    "brfs": "^1.4.3",
+    "console-browserify": "^1.1.0",
+    "debug": "~2.2.0",
+    "dotenv": "^2.0.0",
+    "fs": "0.0.1-security",
+    "gl": "^4.0.2",
+    "jquery-browserify": "^1.8.1",
+    "jsdom": "^9.5.0",
+    "mapbox-gl": "^0.25.1",
+    "sinon": "^1.17.6"
+  },
+  "build": "browserify browser.js -o static/bundle.js",
+  "watch": "watchify browser.js -o static/bundle.js --debug --verbose"
+}

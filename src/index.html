@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Earthquake Map</title>
+	<script src='https://api.mapbox.com/mapbox-gl-js/v0.25.1/mapbox-gl.js'></script>
+
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.25.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+	<div id="map-holder"  style='width: 400px; height: 300px;'>
+	</div>
+	<div>
+		<p>
+			This is a test setup for Mapbox. 
+		</p>
+	</div>
+	<div id='map' style='width: 400px; height: 300px;'></div>
+	<script>		
+		mapboxgl.accessToken = 'pk.eyJ1Ijoic2Ftc2FkdGxlciIsImEiOiJjaXRwdjA3cTMwMm04MnRybGZtcXR0aTY1In0.ximX22tewFc_aLxuD1VxSA';
+		var map = new mapboxgl.Map({
+		    container: 'map',
+		    style: 'mapbox://styles/mapbox/streets-v9'
+		});
+		console.log('this is from the index.html')
+	</script>
+</body>
+
+<script type="text/javascript" src="bundle.js"></script>
+</html>
